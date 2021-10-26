@@ -1,0 +1,9 @@
+# import '../fragments/userFields.gql'
+
+mutation loginMutation($input: LoginUserInput!) {
+  login(input: $input) {
+    user {
+      ...UserFields
+    }
+  }
+}

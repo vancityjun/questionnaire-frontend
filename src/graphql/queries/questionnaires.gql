@@ -1,0 +1,17 @@
+query questionnairesQuery {
+  id
+  title
+  questions {
+    id
+    title
+    questionType
+    options {
+      id
+      title
+      voters {
+        id
+        fullName
+      }
+    }
+  }
+}
